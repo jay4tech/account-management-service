@@ -1,4 +1,4 @@
-package com.example.inventory.service;
+package com.example.inventory.exception;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import lombok.Data;
 public class AccountNotFoundException extends RuntimeException {
 
     private String message;
-    AccountNotFoundException(String message) {
+    public AccountNotFoundException(String message) {
     }
 
 }

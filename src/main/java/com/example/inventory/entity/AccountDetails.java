@@ -18,4 +18,9 @@ public class AccountDetails {
     private Long id;
     private Long name;
     private Double totalAmount;
+    private String emailId;
+    private String moibleNo;
+    private String panCard;
+    private String adharCard;
+
 }

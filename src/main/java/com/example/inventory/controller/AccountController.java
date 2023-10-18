@@ -1,7 +1,7 @@
 package com.example.inventory.controller;
 
 import com.example.inventory.entity.AccountDetails;
-import com.example.inventory.model.DebitCreditDetails;
+import com.example.inventory.model.TransactionEvent;
 import com.example.inventory.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -33,13 +33,13 @@ public class AccountController {
     }
 
 
-    @DeleteMapping("/debit")
-    public void debitAccount(@RequestBody DebitCreditDetails debitCreditDetails){
-        accountService.debitAccount(debitCreditDetails);
+    @GetMapping("/debit")
+    public void debitAccount(@RequestBody TransactionEvent transaction){
+        accountService.debitCreditAccount(transaction);
     }
 
-    @DeleteMapping("/credit")
-    public void creditAccount(@RequestBody DebitCreditDetails debitCreditDetails){
-        accountService.creditAccount(debitCreditDetails);
+    @GetMapping("/credit")
+    public void creditAccount(@RequestBody TransactionEvent transaction){
+        accountService.debitCreditAccount(transaction);
     }
 }

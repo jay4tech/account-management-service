@@ -1,7 +1,7 @@
 package com.example.inventory.service;
 
 import com.example.inventory.entity.AccountDetails;
-import com.example.inventory.model.DebitCreditDetails;
+import com.example.inventory.model.TransactionEvent;
 
 public interface IAccountService {
     AccountDetails getAccountDetails(Long id);
@@ -12,7 +12,5 @@ public interface IAccountService {
 
     void deleteAccountDetails(Long id);
 
-    void creditAccount(DebitCreditDetails debitCreditDetails);
-
-    void debitAccount(DebitCreditDetails debitCreditDetails);
+    void debitCreditAccount(TransactionEvent transaction);
 }

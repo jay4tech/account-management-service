@@ -12,10 +12,10 @@ public class MessageSender {
     @Autowired
     private RabbitTemplate rabbitTemplate;
     @Autowired
-    @Qualifier("queuePayment")
-    private Queue queuePayment;
+    @Qualifier("queueDebitCredit")
+    private Queue queueDebitCredit;
 
-    public void sendPaymentEvent(String message) {
-        rabbitTemplate.convertAndSend(queuePayment.getName(), message);
+    public void sendDebitCreditDetails(String message) {
+        rabbitTemplate.convertAndSend(queueDebitCredit.getName(), message);
     }
 }

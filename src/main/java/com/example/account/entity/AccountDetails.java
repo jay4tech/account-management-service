@@ -1,4 +1,4 @@
-package com.example.inventory.entity;
+package com.example.account.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

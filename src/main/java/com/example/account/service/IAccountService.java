@@ -1,7 +1,7 @@
-package com.example.inventory.service;
+package com.example.account.service;
 
-import com.example.inventory.entity.AccountDetails;
-import com.example.inventory.model.TransactionEvent;
+import com.example.account.entity.AccountDetails;
+import com.example.account.model.TransactionEvent;
 
 public interface IAccountService {
     AccountDetails getAccountDetails(Long id);

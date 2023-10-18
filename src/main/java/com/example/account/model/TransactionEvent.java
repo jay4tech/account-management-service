@@ -1,4 +1,4 @@
-package com.example.inventory.model;
+package com.example.account.model;
 
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

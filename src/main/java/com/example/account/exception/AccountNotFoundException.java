@@ -1,4 +1,4 @@
-package com.example.inventory.exception;
+package com.example.account.exception;
 
 import lombok.Data;
 

@@ -1,8 +1,8 @@
-package com.example.inventory.controller;
+package com.example.account.controller;
 
-import com.example.inventory.entity.AccountDetails;
-import com.example.inventory.model.TransactionEvent;
-import com.example.inventory.service.IAccountService;
+import com.example.account.entity.AccountDetails;
+import com.example.account.model.TransactionEvent;
+import com.example.account.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

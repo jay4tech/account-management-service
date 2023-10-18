@@ -1,6 +1,6 @@
-package com.example.inventory.repository;
+package com.example.account.repository;
 
-import com.example.inventory.entity.AccountDetails;
+import com.example.account.entity.AccountDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AccountRepository extends JpaRepository<AccountDetails, Long> {

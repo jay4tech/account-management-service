@@ -1,4 +1,4 @@
-package com.example.inventory.model;
+package com.example.account.model;
 
 public enum TransactionType {
     CREDIT,

@@ -1,4 +1,4 @@
-package com.example.inventory.utils;
+package com.example.account.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;

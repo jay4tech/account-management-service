@@ -1,12 +1,12 @@
-package com.example.inventory.service;
+package com.example.account.service;
 
-import com.example.inventory.entity.AccountDetails;
-import com.example.inventory.exception.AccountNotFoundException;
-import com.example.inventory.model.TransactionEvent;
-import com.example.inventory.model.TransactionType;
-import com.example.inventory.repository.AccountRepository;
-import com.example.inventory.utils.MessageSender;
-import com.example.inventory.utils.UtilityMapper;
+import com.example.account.entity.AccountDetails;
+import com.example.account.exception.AccountNotFoundException;
+import com.example.account.model.TransactionEvent;
+import com.example.account.model.TransactionType;
+import com.example.account.repository.AccountRepository;
+import com.example.account.utils.MessageSender;
+import com.example.account.utils.UtilityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

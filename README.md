@@ -4,5 +4,5 @@
 - Update Account
 - Delete Account
 - Get Account Details
-- Process Credit Request, Emmit Transaction Event
-- Process Debit Request, Emmit Transaction Event
+- Process Credit Request, Emit Transaction Event
+- Process Debit Request, Emit Transaction Event

@@ -1,5 +1,8 @@
 package com.example.account.utils;
 
+import com.example.account.entity.AccountDetails;
+import com.example.account.model.AuditEvent;
+import com.example.account.model.TransactionEvent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -34,4 +37,13 @@ public class UtilityMapper {
         return mapper;
     }
 
+    public static AuditEvent getPrepareAuditEvent(Object accountDetails) {
+        AuditEvent auditEvent = new AuditEvent<>();
+        if (accountDetails instanceof AccountDetails)
+            auditEvent.setAuditType("Account");
+        if (accountDetails instanceof TransactionEvent)
+            auditEvent.setAuditType("Transaction");
+        auditEvent.setEventData(accountDetails);
+        return auditEvent;
+    }
 }

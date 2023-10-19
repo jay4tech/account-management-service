@@ -17,11 +17,20 @@ public class RabbitConfig {
         return new Queue(queueDebitCredit, true);
     }
 
-    @Qualifier("${queue.name.reverseDebit}")
+    @Value("${queue.name.reverseDebit}")
     private String queueNameReverseDebit;
 
     @Bean(name = "queueReverseDebit")
     public Queue queueReverseDebit() {
         return new Queue(queueNameReverseDebit, true);
+    }
+
+
+    @Value("${queue.name.audit}")
+    private String queueNameEvent;
+
+    @Bean(name = "queueEvent")
+    public Queue queueEvent() {
+        return new Queue(queueNameEvent, true);
     }
 }

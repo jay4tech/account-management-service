@@ -26,6 +26,10 @@ public class AccountService implements IAccountService {
 
     @Override
     public AccountDetails createtAccountDetails(AccountDetails accountDetails) {
+        // Send Audit Event
+        messageSender.sendAuditEvent(UtilityMapper.getJsonString(UtilityMapper.getPrepareAuditEvent(accountDetails)));
+        // Send Notification Event
+
         return accountRepository.save(accountDetails);
     }
 

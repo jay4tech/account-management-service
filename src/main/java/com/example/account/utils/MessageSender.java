@@ -18,4 +18,11 @@ public class MessageSender {
     public void sendDebitCreditDetails(String message) {
         rabbitTemplate.convertAndSend(queueDebitCredit.getName(), message);
     }
+    @Autowired
+    @Qualifier("queueEvent")
+    private Queue queueEvent;
+
+    public void sendAuditEvent(String message) {
+        rabbitTemplate.convertAndSend(queueEvent.getName(), message);
+    }
 }
